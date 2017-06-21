@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "outDir": "build",
+        "module": "commonjs",
+        "declaration": true,
+        "target": "es6",
+        "types": [
+            "jest"
+        ]
+    },
+    "include": [
+        "src/**/*",
+        "tests**/*"
+    ]
+}

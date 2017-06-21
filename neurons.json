@@ -1,0 +1,61 @@
+[
+  {
+    "name": "get",
+    "neurons": [
+      {
+        "name": "get",
+        "input": [
+          {
+            "name": "url",
+            "type": "string"
+          }
+        ],
+        "output": [
+          {
+            "name": "body",
+            "type": "string"
+          },
+          {
+            "name": "header",
+            "nodes": [
+              {
+                "type": "tuple",
+                "nodes": [
+                  {
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "name": "value",
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "status",
+            "nodes": [
+              {
+                "name": "code",
+                "type": "number"
+              },
+              {
+                "name": "text",
+                "type": "string"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "nucleus": [
+      {
+        "file": "src/index.ts",
+        "line": 19,
+        "character": 19,
+        "name": "get"
+      }
+    ]
+  }
+]
